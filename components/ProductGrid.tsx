@@ -1,0 +1,3 @@
+import ProductCard from "./ProductCard";
+import type { Product } from "@/data/products";
+export default function ProductGrid({products}:{products:Product[]}){if(!products.length)return <div className="rounded-3xl bg-white p-12 text-center text-cocoa/50">No desserts found. Try another search.</div>;return <div className="grid grid-cols-2 gap-x-4 gap-y-9 md:grid-cols-3 lg:grid-cols-4">{products.map(p=><ProductCard key={p.id} product={p}/>)}</div>}

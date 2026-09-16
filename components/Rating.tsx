@@ -1,0 +1,2 @@
+import { Star } from "lucide-react";
+export default function Rating({value}:{value:number}){return <span className="flex items-center gap-0.5">{Array.from({length:5}).map((_,i)=><Star key={i} size={14} fill={i<Math.round(value)?"currentColor":"none"} className={i<Math.round(value)?"":"text-cocoa/20"}/>)}</span>}

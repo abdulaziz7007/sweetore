@@ -1,0 +1,2 @@
+"use client";
+import {useI18n} from "@/lib/i18n";export default function SectionHeading({eyebrow,title,text}:{eyebrow:string;title:string;text?:string}){return <div className="mb-9 max-w-2xl"><span className="text-xs uppercase tracking-[.25em] text-gold">{eyebrow}</span><h2 className="mt-3 text-4xl md:text-5xl">{title}</h2>{text&&<p className="mt-3 leading-7 text-cocoa/55">{text}</p>}</div>}

@@ -1,0 +1,1 @@
+export default function LoadingSkeleton(){return <div className="aspect-square animate-pulse rounded-[28px] bg-white/70"/>}

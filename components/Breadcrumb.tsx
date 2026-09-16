@@ -1,0 +1,1 @@
+import Link from "next/link";export default function Breadcrumb({current}:{current:string}){return <div className="mb-7 flex items-center gap-2 text-sm text-cocoa/50"><Link href="/products">Products</Link><span>/</span><span>{current}</span></div>}
