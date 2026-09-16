@@ -72,7 +72,39 @@ export const productTranslations: Record<string, {uz:{name:string;description:st
 };
 
 
-const ingredientMap:Record<string,{uz:string;ru:string}>={Cocoa:{uz:"Kakao",ru:"Kakao"},"Belgian dark chocolate":{uz:"Belgiya qora shokoladi",ru:"Бельгийский тёмный шоколад"},Butter:{uz:"Sariyog‘",ru:"Сливочное масло"},Cream:{uz:"Krem",ru:"Сливки"},Eggs:{uz:"Tuxum",ru:"Яйцо"},Vanilla:{uz:"Vanil",ru:"Ваниль"},Strawberries:{uz:"Qulupnay",ru:"Клубника"},"Cream cheese":{uz:"Krem-sir",ru:"Сливочный сыр"},Pistachio:{uz:"Pista",ru:"Фисташка"},Almond:{uz:"Bodom",ru:"Миндаль"},Hazelnut:{uz:"Funduk",ru:"Фундук"},"Sea salt":{uz:"Dengiz tuzi",ru:"Морская соль"},Caramel:{uz:"Karamel",ru:"Карамель"},Chocolate:{uz:"Shokolad",ru:"Шоколад"},Raspberry:{uz:"Malina",ru:"Малина"},"Egg whites":{uz:"Tuxum oqi",ru:"Белок"},Sugar:{uz:"Shakar",ru:"Сахар"},Lemon:{uz:"Limon",ru:"Лимон"},Biscuit:{uz:"Pechenye",ru:"Печенье"},"Dark chocolate":{uz:"Qora shokolad",ru:"Тёмный шоколад"},Cocoa:{uz:"Kakao",ru:"Какао"},"White chocolate":{uz:"Oq shokolad",ru:"Белый шоколад"},Matcha:{uz:"Matcha",ru:"Матча"},"Assorted premium desserts":{uz:"Tanlangan premium shirinliklar",ru:"Ассорти премиальных десертов"},"Assorted desserts":{uz:"Turli shirinliklar",ru:"Ассорти десертов"},Flour:{uz:"Un",ru:"Мука"}};
+const ingredientMap: Record<string, { uz: string; ru: string }> = {
+  Cocoa: { uz: "Kakao", ru: "Какао" },
+  "Belgian dark chocolate": { uz: "Belgiya qora shokoladi", ru: "Бельгийский тёмный шоколад" },
+  Butter: { uz: "Sariyog‘", ru: "Сливочное масло" },
+  Cream: { uz: "Krem", ru: "Сливки" },
+  Eggs: { uz: "Tuxum", ru: "Яйцо" },
+  Vanilla: { uz: "Vanil", ru: "Ваниль" },
+  Strawberries: { uz: "Qulupnay", ru: "Клубника" },
+  "Cream cheese": { uz: "Krem-sir", ru: "Сливочный сыр" },
+  Pistachio: { uz: "Pista", ru: "Фисташка" },
+  Almond: { uz: "Bodom", ru: "Миндаль" },
+  Hazelnut: { uz: "Funduk", ru: "Фундук" },
+  "Sea salt": { uz: "Dengiz tuzi", ru: "Морская соль" },
+  Caramel: { uz: "Karamel", ru: "Карамель" },
+  Chocolate: { uz: "Shokolad", ru: "Шоколад" },
+  Raspberry: { uz: "Malina", ru: "Малина" },
+  "Egg whites": { uz: "Tuxum oqi", ru: "Белок" },
+  Sugar: { uz: "Shakar", ru: "Сахар" },
+  Lemon: { uz: "Limon", ru: "Лимон" },
+  Biscuit: { uz: "Pechenye", ru: "Печенье" },
+  "Dark chocolate": { uz: "Qora shokolad", ru: "Тёмный шоколад" },
+  "White chocolate": { uz: "Oq shokolad", ru: "Белый шоколад" },
+  Matcha: { uz: "Matcha", ru: "Матча" },
+  "Assorted premium desserts": {
+    uz: "Tanlangan premium shirinliklar",
+    ru: "Ассорти премиальных десертов"
+  },
+  "Assorted desserts": {
+    uz: "Turli shirinliklar",
+    ru: "Ассорти десертов"
+  },
+  Flour: { uz: "Un", ru: "Мука" }
+};
 
 const categoryMap:Record<string,{uz:string;ru:string}>={Cakes:{uz:"Tortlar",ru:"Торты"},Cupcakes:{uz:"Kapkeyklar",ru:"Капкейки"},Cookies:{uz:"Pechenyelar",ru:"Печенье"},Donuts:{uz:"Ponchiklar",ru:"Пончики"},Chocolates:{uz:"Shokoladlar",ru:"Шоколад"},Macarons:{uz:"Makaronlar",ru:"Макарон"},Cheesecakes:{uz:"Cheesecake",ru:"Чизкейки"},"Gift Boxes":{uz:"Sovg‘a qutilari",ru:"Подарочные боксы"}};
 
