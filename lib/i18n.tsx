@@ -112,8 +112,25 @@ export function I18nProvider({children}:{children:ReactNode}){
  const [locale,setLocale]=useState<Locale>("uz");
  useEffect(()=>{const saved=localStorage.getItem("sweetora-locale") as Locale|null;if(saved==="uz"||saved==="ru")setLocale(saved);},[]);
  useEffect(()=>{localStorage.setItem("sweetora-locale",locale);document.documentElement.lang=locale;},[locale]);
- const value=useMemo(()=>({locale,setLocale,t:(key:string)=> (locale==="uz"?uz:ru)[key] ?? key, category:(key:string)=>categoryMap[key]?.[locale]??key, product:(p:Product)=>productTranslations[p.id]?.[locale]??{name:p.name,description:p.description,category:categoryMap[p.category]?.[locale]??p.category}}),[locale]);
- return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
+const value = useMemo(() => ({
+  locale,
+  setLocale,
+  t: (key: string) =>
+    (locale === "uz" ? uz : ru)[key] ?? key,
+
+  category: (key: string) =>
+    categoryMap[key]?.[locale] ?? key,
+
+  ingredient: (key: string) =>
+    ingredientMap[key]?.[locale] ?? key,
+
+  product: (p: Product) =>
+    productTranslations[p.id]?.[locale] ?? {
+      name: p.name,
+      description: p.description,
+      category: categoryMap[p.category]?.[locale] ?? p.category,
+    },
+}), [locale]); return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }
 type I18nValue = { locale: Locale; setLocale: (locale: Locale) => void; t: (key: string) => string; category: (key: string) => string; ingredient: (key: string) => string; product: (product: Product) => {name:string;description:string;category:string} };
 const I18nContext=createContext<I18nValue|null>(null);
